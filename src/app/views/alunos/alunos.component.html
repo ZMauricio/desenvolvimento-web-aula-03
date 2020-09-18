@@ -1,0 +1,29 @@
+<div class="container">
+
+  <div class="row mt-3 mb-4">
+
+
+    <div class="card ml-3 mb-3" style="width: 18rem;" *ngFor="let obj of alunos">
+
+      <img [src]="obj.foto" class="card-img-top" alt="...">
+      <div class="card-body">
+
+        <h5 class="card-title">
+          {{obj.nome}}
+        </h5>
+
+        <p class="card-text">
+          <strong>Curso:</strong> {{obj.curso}}
+        </p>
+
+        <a routerLink="/aluno-detalhes/{{obj.id}}" class="btn btn-primary">Detalhes</a>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+</div>
